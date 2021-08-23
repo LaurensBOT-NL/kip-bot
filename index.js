@@ -1222,7 +1222,7 @@ $onlyIf[$getUserVar[FarmerAantal]==1;{title:Oeps..}{description:Je hebt nog geen
 
 bdfd.command({
   name: "ping",
-  code: `$reply[$messageID;{color:$getUserVar[Kleur]}{field:Bot's Ping:$botPing ms:yes}{field:Discord's Ping:$ping ms:yes}{field:Database's Ping:$dbPing ms:yes};$getUserVar[Pings]]
+  code: `$reply[$messageID;{color:$getUserVar[Kleur]}{field:Bot's Ping:$replaceText[$botPing;-;]ms, $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[true;$checkCondition[$replaceText[$botPing;-;]>300];Als dit bericht langer dan een kwartier blijft staan, contacteer Laurens#9999];$checkCondition[$replaceText[$botPing;-;]>200];Oeps, ik word te snel gebruikt!];$checkCondition[$replaceText[$botPing;-;]>100];Kan beter...];$checkCondition[$replaceText[$botPing;-;]>60];Best goed!];$checkCondition[$replaceText[$botPing;-;]>45];Prima!];$checkCondition[$replaceText[$botPing;-;]<45];Uitstekend!]:no}{field:API's Ping:$replaceText[$ping;-;]ms, $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[true;$checkCondition[$replaceText[$ping;-;]>300];Discord heeft het niet makkelijk...];$checkCondition[$replaceText[$ping;-;]>200];Oeps, discord heeft een mini-probleempje!];$checkCondition[$replaceText[$ping;-;]>100];Niet slecht...];$checkCondition[$replaceText[$ping;-;]>60];Oké dan];$checkCondition[$replaceText[$ping;-;]>45];Prima!];$checkCondition[$replaceText[$ping;-;]<45];Uitstekend!]:no}{field:Database's Ping:$dbPingms:no};$getUserVar[Pings]]
   `
 })
 
