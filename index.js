@@ -1,16 +1,4 @@
-// http Pinglik webserver example code
-const http = require("http");
-const port = process.env.PORT || 7000;
-const server = http
-  .createServer((req, res) => {
-    res.writeHead(200, { "Content-Type": "text/html" });
-    res.end(
-      "<code>Hello, this project is using <a href='https://pinglik.eu' target='_blank'>Pinglik</a>!</code>"
-    );
-  })
-  .listen(port);
 
-console.log(`📡 Pinglik webserver has started!`);
 //DBD.JS
 const dbddb = require('dbd.db')
 const dbdjs = require('dbdjs.db')
@@ -44,14 +32,13 @@ db.once('ready', async () => {
 
 db.connect()
 
-const mySecret = process.env['token']
 
 const aoi = require('aoi.js')
 const bdfd = new aoi.Bot({
   autoUpdate: true,
   sharding: false,
   shardAmount: 2,
-  token: process.env.token,
+  token: "ODI4MjAzMjMzOTg1NTYwNTg2.YGmKXg.qMWkx2Q-yqv8Z-ObnuqLcIrH6YU",
   prefix: [".", "<@!828203233985560586>", "<@828203233985560586>"],
   mobile: true,
   suppressAll: false,
@@ -77,7 +64,7 @@ bdfd.status({
 //DB-Script
 /*const Dlang = require('discordbot-script')
 const bot = new Dlang({
-  token: process.env.token,
+  token: "ODI4MjAzMjMzOTg1NTYwNTg2.YGmKXg.qMWkx2Q-yqv8Z-ObnuqLcIrH6YU",
   prefix: [".", "<@!828203233985560586>", "<@828203233985560586>"]
 })
 bot.MessageEvent()*/
@@ -155,11 +142,7 @@ $onlyForIDs[699320106978639874;689192849719296056;]
 //Custom Command 2
 bdfd.command({
   name: "youtube",
-  code: `$reply[$messageID;$customEmoji[slashcommand] <t:1643846400:R> reageer ik niet meer op normale commands (.help), dit omdat discord een nieuw iets uibrengt dat dit stopt! Gebruik mijn slash commands!
-  {title:YouTube}
-  {description:[Mijn YouTube](https://www.youtube.com/channel/UCJOSqi2Z3JapL6xFPZ0vOUw)}
-  {footer:Kippieldv Bot}
-  {color:$getUserVar[Kleur]};$getUserVar[Pings]]
+  code: `$reply[$messageID;$customEmoji[slashcommand] <t:1643846400:R> reageer ik niet meer op normale commands (zoals \`.help\`), dit omdat discord een nieuw iets uibrengt dat dit stopt! Gebruik mijn slash commands!;$getUserVar[Pings]]
   
   `
 })
@@ -178,11 +161,7 @@ bdfd.interactionCommand({
 bdfd.command({
   name: "instagram",
   aliases: ["insta"],
-  code: `$reply[$messageID;{title:Instagram}
-  {description:[Mijn Instagram](https://www.instagram.com/Kippieldv/)
-  [6 Katten Instagram](https://www.instagram.com/6katten/)}
-  {footer:Kippieldv Bot}
-  {color:$getUserVar[Kleur]};$getUserVar[Pings]]
+  code: `$reply[$messageID;$customEmoji[slashcommand] <t:1643846400:R> reageer ik niet meer op normale commands (zoals \`.help\`), dit omdat discord een nieuw iets uibrengt dat dit stopt! Gebruik mijn slash commands!;$getUserVar[Pings]]
   `
 })
 bdfd.interactionCommand({
@@ -197,10 +176,7 @@ bdfd.interactionCommand({
 //Custom Command 4
 bdfd.command({
   name: "discord",
-  code: `$reply[$messageID;{title:Discord}
-  {description:[Discord Invite Link](https://discord.gg/gSWXUkB)}
-  {footer:Kippieldv Bot}
-  {color:$getUserVar[Kleur]};$getUserVar[Pings]]
+  code: `$reply[$messageID;$customEmoji[slashcommand] <t:1643846400:R> reageer ik niet meer op normale commands (zoals \`.help\`), dit omdat discord een nieuw iets uibrengt dat dit stopt! Gebruik mijn slash commands!;$getUserVar[Pings]]
   `
 })
 bdfd.interactionCommand({
@@ -214,10 +190,7 @@ bdfd.interactionCommand({
 //Custom Command 5
 bdfd.command({
   name: "steam",
-  code: `$reply[$messageID;{title:Steam}
-  {description:[Mijn Steam Groep](http://steamcommunity.com/groups/kippenhok)}
-  {footer:Kippieldv Bot}
-  {color:$getUserVar[Kleur]};$getUserVar[Pings]]
+  code: `$reply[$messageID;$customEmoji[slashcommand] <t:1643846400:R> reageer ik niet meer op normale commands (zoals \`.help\`), dit omdat discord een nieuw iets uibrengt dat dit stopt! Gebruik mijn slash commands!;$getUserVar[Pings]]
   `
 })
 bdfd.interactionCommand({
@@ -231,10 +204,7 @@ bdfd.interactionCommand({
 //Custom Command 6
 bdfd.command({
   name: "twitch",
-  code: `$reply[$messageID;{title:Twitch}
-  {description:[Mijn Twitch](https://www.twitch.tv/Kippieldv)}
-  {footer:Kippieldv Bot}
-  {color:$getUserVar[Kleur]};$getUserVar[Pings]]
+  code: `$reply[$messageID;$customEmoji[slashcommand] <t:1643846400:R> reageer ik niet meer op normale commands (zoals \`.help\`), dit omdat discord een nieuw iets uibrengt dat dit stopt! Gebruik mijn slash commands!;$getUserVar[Pings]]
   `
 })
 bdfd.interactionCommand({
@@ -248,10 +218,7 @@ bdfd.interactionCommand({
 //Custom Command 7https://www.tiktok.com/@sanneldv
 bdfd.command({
   name: "tiktok",
-  code: `$reply[$messageID;{title:TikTok}
-  {description:[Mijn TikTok](https://www.tiktok.com/@sanneldv)}
-  {footer:Kippieldv Bot}
-  {color:$getUserVar[Kleur]};$getUserVar[Pings]]
+  code: `$reply[$messageID;$customEmoji[slashcommand] <t:1643846400:R> reageer ik niet meer op normale commands (zoals \`.help\`), dit omdat discord een nieuw iets uibrengt dat dit stopt! Gebruik mijn slash commands!;$getUserVar[Pings]]
   `
 })
 bdfd.interactionCommand({
@@ -267,15 +234,7 @@ bdfd.command({
   name: "embed",
   aliases: ["embedmsg,embed-bericht"],
   code: `
-$channelSendMessage[$mentionedChannels[1];{title:$message[2]}{description:$messageSlice[2;2000]}{color:$getUserVar[Kleur]}{footer:Kippieldv Bot}]
-
-
-
-$color[$getUserVar[Kleur]]
-$useChannel[$mentionedChannels[1]]
-$reply[$messageID;Bericht gestuurd! :heavy_check_mark:;$getUserVar[Pings]]
-$onlyIf[$mentionedChannels[1]!=;{title:Oeps..}{description:Je moet een kanaal taggen!}{color:FF0000}]
-$onlyIf[$messageSlice[2;2000]!=;{title:Oeps..}{description:Wat wil je in je embed?}{color:FF0000}]
+$reply[$messageID;$customEmoji[slashcommand] <t:1643846400:R> reageer ik niet meer op normale commands (zoals \`.help\`), dit omdat discord een nieuw iets uibrengt dat dit stopt! Gebruik mijn slash commands!;$getUserVar[Pings]]
 $onlyIf[$getUserVar[BadgeStaff]==<:Staff:868120936992358460>;Je hebt perms nodig (Tijdelijke error!)]
 `})
 //$[{title:Oeps..}{description:Er is iets fout gegaan! Probeer het opnieuw!}{color:FF0000}]`})

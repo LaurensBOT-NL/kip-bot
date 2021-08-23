@@ -8,19 +8,19 @@
   },
   "dependencies": {
     "@discordjs/opus": "^0.5.3",
-    "aoi.js": "^4.2.1",
+    "aoi.js": "^4.4.4",
     "dbd.db": "^1.4.5",
     "dbd.js": "^3.0.6",
     "dbdjs.db": "^1.0.2",
     "discord-buttons": "^2.4.1",
     "discordbot-script": "^2.6.1",
     "node": "^16.5.0",
+    "node-json-db": "^1.1.0",
     "nodemon": "^2.0.12",
     "npm": "^7.20.1",
     "quick.db": "^7.1.3",
-    "ytdl-core": "^4.8.0",
-    "node-json-db": "^1.1.0",
-    "read-file": "^0.2.0"
+    "read-file": "^0.2.0",
+    "ytdl-core": "^4.8.0"
   },
   "engines": {
     "node": "12.x",
