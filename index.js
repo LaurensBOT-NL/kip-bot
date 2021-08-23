@@ -155,7 +155,8 @@ $onlyForIDs[699320106978639874;689192849719296056;]
 //Custom Command 2
 bdfd.command({
   name: "youtube",
-  code: `$reply[$messageID;{title:YouTube}
+  code: `$reply[$messageID;$customEmoji[slashcommand] <t:1643846400:R> reageer ik niet meer op normale commands (.help), dit omdat discord een nieuw iets uibrengt dat dit stopt! Gebruik mijn slash commands!
+  {title:YouTube}
   {description:[Mijn YouTube](https://www.youtube.com/channel/UCJOSqi2Z3JapL6xFPZ0vOUw)}
   {footer:Kippieldv Bot}
   {color:$getUserVar[Kleur]};$getUserVar[Pings]]
