@@ -38,7 +38,7 @@ const bdfd = new aoi.Bot({
   autoUpdate: true,
   sharding: false,
   shardAmount: 2,
-  token: "ODI4MjAzMjMzOTg1NTYwNTg2.YGmKXg.qMWkx2Q-yqv8Z-ObnuqLcIrH6YU",
+  token: "",
   prefix: [".", "<@!828203233985560586>", "<@828203233985560586>"],
   mobile: true,
   suppressAll: false,
@@ -64,7 +64,7 @@ bdfd.status({
 //DB-Script
 /*const Dlang = require('discordbot-script')
 const bot = new Dlang({
-  token: "ODI4MjAzMjMzOTg1NTYwNTg2.YGmKXg.qMWkx2Q-yqv8Z-ObnuqLcIrH6YU",
+  token: "",
   prefix: [".", "<@!828203233985560586>", "<@828203233985560586>"]
 })
 bot.MessageEvent()*/
